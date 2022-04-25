@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>New employee</title>
+</head>
+<body>
+<h1>Insert data to create a new employee</h1>
+<form th:action="@{/create}" method="post">
+    <p><input type="text" id="employee_name" placeholder="Name" name="employee_name" required></p>
+    <p><input type="text" id="job" placeholder="Job" name="job" required></p>
+    <p><input type="number" id="manager" placeholder="Manager id" name="manager" required></p>
+    <p><input type="date" id="hiredate" placeholder="YYYY-MM-DD" name="hiredate" required></p>
+    <p><input type="number" id="salary" placeholder="Salary" name="salary" required></p>
+    <p><input type="number" id="commission" placeholder="Commission" name="commission" required></p>
+    <p><input type="number" id="department_number" placeholder="Department number" name="department_number" required></p>
+    <button type="submit" onclick="location.href='../createEmployee'">Save</button>
+</form>
+
+</body>
+</html>

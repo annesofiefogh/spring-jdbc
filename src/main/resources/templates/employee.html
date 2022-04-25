@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Single employee</title>
+</head>
+<body>
+<h1>Employee</h1>
+<table>
+    <tr>
+        <td th:text="${employee.getId()}"></td>
+        <td th:text="${employee.getEmployee_name()}"></td>
+        <td th:text="${employee.getJob()}"></td>
+        <td th:text="${employee.getManager()}"></td>
+        <td th:text="${employee.getHiredate()}"></td>
+        <td th:text="${employee.getSalary()}"></td>
+        <td th:text="${employee.getCommission()}"></td>
+        <td th:text="${employee.getDepartment_number()}"></td>
+    </tr>
+</table>
+</body>
+</html>
