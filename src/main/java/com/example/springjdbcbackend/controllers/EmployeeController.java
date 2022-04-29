@@ -11,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.context.request.WebRequest;
 
 import java.sql.Date;
+import java.text.SimpleDateFormat;
 import java.util.Objects;
 
 @Controller
@@ -58,7 +59,7 @@ public class EmployeeController {
     @PostMapping("/employeesByDepartment")
     public String seeAllEmployeesByDepartment(Model model, WebRequest request){
         String department_name = request.getParameter("department_name");
-        model.addAttribute("employeesByDepartment", employeeIRepository.getAllEntitiesByDepartment(department_name));
+        model.addAttribute("employees", employeeIRepository.getAllEntitiesByDepartment(department_name));
         return "redirect:/employeesByDepartment";
     }
 }

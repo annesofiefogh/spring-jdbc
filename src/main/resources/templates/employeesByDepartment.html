@@ -7,8 +7,9 @@
 <body>
 <h1>Type the name of the department to see all its employees</h1>
 <form th:action="@{/employeesByDepartment}" method="post">
-    <p><input type="text" id="employeesByDepartment" placeholder="Department name" name="department_name" required></p>
-    <button type="submit" onclick="location.href='../employees'">Search</button>
+    <p><input type="text" id="department_name" placeholder="Department name" name="department_name" required></p>
+    <button type="submit" onclick="location.href='../employeesByDepartment'">Search</button>
+
 </form><br>
 
 <table>
